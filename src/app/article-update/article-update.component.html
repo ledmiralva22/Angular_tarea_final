@@ -1,0 +1,21 @@
+<form (ngSubmit)="updateArticle()" #articleForm="ngForm">
+    <div class="ui center aligned padded grid">
+      <div class="row">
+        <div class="two wide column">Title</div>
+        <div class="eight wide column ui input">
+          <input type="text" [(ngModel)]="article.title" name="title" placeholder="Title..." style="width: 100%;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="two wide column">Link</div>
+        <div class="eight wide column ui input">
+          <input type="text" [(ngModel)]="article.link" name="link" placeholder="Link..." style="width: 100%;">
+        </div>
+      </div>
+      <div class="row">
+        <button type="submit" class="ui primary button">
+          Save
+        </button>
+      </div>
+    </div>
+  </form>
